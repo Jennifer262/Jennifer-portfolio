@@ -1,15 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
 header {
-    background: #333;
+    background: #0077b6;
     color: white;
-    padding: 15px 0;
+    padding: 20px;
 }
 
 nav ul {
@@ -25,14 +34,133 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+#skills ul li {
+    background: #0077b6;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Projects Section */
+#projects ul {
+    list-style: none;
+}
+
+#projects ul li {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #0077b6;
+}
+
+/* Experience Section */
+#experience h3 {
+    color: #023e8a;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+#contact a {
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+}
+/* Button Styles */
+.button {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #005f86;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 section {
-    padding: 50px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px 0;
+    animation: fadeIn 1s ease-in;
 }
