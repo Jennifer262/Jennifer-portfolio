@@ -1,185 +1,49 @@
-/* Reset some default styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
-  padding: 0;
-  margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
 }
 
-/* Header Styling */
+/* Header Background */
 header {
-  background-color: #4CAF50; /* Green */
-  color: #fff;
-  padding: 15px 0;
+    background: url("images/background.jpg") center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
 }
 
-header h1 {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-nav ul {
-  list-style: none;
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline;
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #FFD700; /* Gold on hover */
-}
-
-/* Section Styling */
+/* Sections */
 section {
-  padding: 40px 20px;
-  background-color: #fff;
-  margin-bottom: 20px;
-  border-radius: 8px;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #4CAF50; /* Green */
+/* Blog Section */
+#blog {
+    background: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
 }
 
-.project {
-  background-color: #fff;
-  padding: 20px;
-  margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
 }
 
-.project h3 {
-  color: #333;
-  font-size: 1.5rem;
-}
-
-.project p {
-  color: #666;
-  font-size: 1rem;
-}
-
-/* Contact Section */
-#contact a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  color: #FFD700; /* Gold on hover */
-}
-
-/* Footer Styling */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  border-top: 3px solid #4CAF50;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #FFD700; /* Gold on hover */
-}
-
-footer p {
-  margin-top: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  /* Header */
-  header h1 {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  nav ul {
-    float: none;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    display: block;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  nav ul li a {
-    padding: 10px;
-    font-size: 1.1rem;
-  }
-
-  /* Sections */
-  section {
-    padding: 30px 15px;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
-
-  .project h3 {
-    font-size: 1.3rem;
-  }
-
-  /* Footer */
-  footer p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Smaller screens (like mobile phones) */
-  section {
-    padding: 20px 10px;
-  }
-
-  section h2 {
-    font-size: 1.3rem;
-  }
-
-  .project h3 {
-    font-size: 1.1rem;
-  }
-
-  footer {
-    font-size: 0.8rem;
-  }
-
-  footer p {
-    margin-top: 5px;
-  }
+.dark-mode section {
+    background: #292b2c;
+    color: white;
 }
