@@ -23,8 +23,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Dark Mode Toggle
     const toggleBtn = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+
+    // Check local storage for dark mode preference
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+    }
+
+    // Toggle Dark Mode on Button Click
     toggleBtn.addEventListener("click", function() {
-        document.body.classList.toggle("dark-mode");
+        body.classList.toggle("dark-mode");
+
+        // Save preference in local storage
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
     });
 
     // Smooth Scrolling
