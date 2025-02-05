@@ -37,7 +37,16 @@ section {
     color: white;
 }
 
+.dark-mode nav {
+    background: #333;
+}
+
 .dark-mode section {
     background: #292b2c;
+    color: white;
+}
+
+.dark-mode footer {
+    background: #333;
     color: white;
 }
