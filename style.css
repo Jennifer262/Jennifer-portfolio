@@ -14,100 +14,59 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Header Background */
 header {
-    background: #0077b6;
+    background: url("images/background.jpg") center/cover no-repeat;
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 15px;
+    background: rgba(0, 119, 182, 0.9);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffb703;
 }
+
 /* Sections */
 section {
     padding: 60px 20px;
     max-width: 900px;
     margin: auto;
-}
-
-h2 {
-    font-size: 28px;
-    color: #0077b6;
-    margin-bottom: 20px;
-}
-
-/* About Section */
-#about p {
-    font-size: 18px;
-    text-align: justify;
-    padding: 10px;
-    background: #e3f2fd;
+    background: white;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-/* Skills Section */
-#skills ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-}
-
-#skills ul li {
+/* Buttons */
+button {
     background: #0077b6;
     color: white;
-    padding: 10px 15px;
-    margin: 5px;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 16px;
+    cursor: pointer;
 }
 
-/* Projects Section */
-#projects ul {
-    list-style: none;
-}
-
-#projects ul li {
-    background: #f1f1f1;
-    padding: 15px;
-    margin: 10px 0;
-    border-left: 5px solid #0077b6;
-}
-
-/* Experience Section */
-#experience h3 {
-    color: #023e8a;
-    margin-top: 20px;
-}
-
-/* Contact Section */
-#contact a {
-    color: #0077b6;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
+button:hover {
+    background: #005f86;
 }
 
 /* Footer */
@@ -115,52 +74,15 @@ footer {
     background: #0077b6;
     color: white;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-    }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    #skills ul {
-        flex-direction: column;
-    }
-}
-/* Button Styles */
-.button {
-    display: inline-block;
-    background: #0077b6;
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
-.button:hover {
-    background: #005f86;
-}
-
-/* Smooth Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-section {
-    animation: fadeIn 1s ease-in;
+.dark-mode section {
+    background: #292b2c;
+    color: white;
 }
